@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  .issuu {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3rem;
+  }
+  .buttons__google {
+    margin-bottom: 10px;
+  }
+}
+
+/* --- NAVBAR --- */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 2px 1px rgba(116, 115, 115, 0.2);
+
+  &__logo {
+    margin: 1rem 4rem 1rem;
+    width: 14rem;
+    height: 3.5rem;
+  }
+
+  &__signin {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-right: 4rem;
+    &__signin div p {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+/* --- BODY --- */
+
+.issuu {
+  padding: 80px;
+  &__tittle {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+.buttons {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  &__google {
+    display: flex;
+    height: 3.3rem;
+    margin-right: 16px;
+  }
+  &__facebook {
+    display: flex;
+    height: 3.3rem;
+  }
+}
+
+.buttons__text {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(61, 61, 61);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &__label {
+    margin: 1rem 0 0.5rem 0;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+    font-size: 1.3rem;
+  }
+  &__input {
+    padding: 0.7rem;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    margin-right: 2rem;
+  }
+}
+
+/* ---CHECKBOX--- */
+
+.checkbox {
+  margin-top: 1.5rem;
+  display: flex;
+  position: relative;
+  &__submit {
+    display: flex;
+    appearance: none;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+  &__submit:checked:after {
+    content: "\2713";
+    font-size: 0.8rem;
+    top: 1px;
+    left: 4.5px;
+    position: absolute;
+  }
+  &__label {
+    margin-left: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+}
+
+.button__style {
+  background-color: white;
+  color: rgb(173, 173, 173);
+  font-size: 17px;
+  text-transform: uppercase;
+  border-radius: 35px;
+  font-weight: bold;
+  padding: 1.2rem 1.9rem;
+  margin-top: 1.5rem;
+  border: rgb(173, 173, 173) 3px dashed;
+  cursor: pointer;
+  letter-spacing: 3px;
+  border-width: 2px;
+}
+
+/* --- FOOTER --- */
+
+.footer {
+  box-shadow: 2px -2px 3px 1px rgba(116, 115, 115, 0.2);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: grey;
+  &__mark {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3rem;
+  }
+  &__list li {
+    display: inline;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    padding: 0 1em 0 0;
+    height: 3rem;
+    width: 100%;
+  }
+}
+
+.footer a:visited {
+  text-decoration: none;
+  color: grey;
+}
