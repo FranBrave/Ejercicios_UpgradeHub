@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenido a Mozza Bar</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#concepto">Concepto</a>
+      <a href="#fotos">Fotos</a>
+      <a href="#carta">Menú</a>
+      <a href="#reservas">Reservas</a>
+      <a href="#blog">Blog</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="home">
+      <div class="text-container">
+        <p>Descubre</p>
+        <h1>Descubre Mozza Bar</h1>
+        <p>We are open</p>
+      </div>
+    </section>
+
+    <article>
+      <section id="concepto">
+        <h1>Concepto</h1>
+        <p>
+          Mozza Bar es un fantástico restaurante de cocina internacional ubicado
+          en el exclusivo barrio de salamanca. Distribuido en una única planta y
+          una estupenda terraza, destaca por su decoración urbana con toques
+          rústicos, que dotan al local de un ambiente especial y acogedor.
+        </p>
+        <p>
+          Disfruta de sus desayunos, estimula tus sentidos con nuestros mejores
+          platos o disfruta de nuestro AfterWork en buena compañía.
+        </p>
+        <p>
+          En Mozza Bar encontrarás clásicos de la gastronomía mundial,
+          elaborados con productos siempre frescos, de calidad y un toque de
+          personalidad.
+        </p>
+      </section>
+    </article>
+    <section id="fotos">
+      <img src="./imágenes/ima1.JPG" alt="Botellas" class="bottles-img" />
+      <img src="./imágenes/ima2.JPG" alt="Ventanas" class="windows-img" />
+      <img src="./imágenes/ima3.JPG" alt="Mesas" class="tables-img" />
+      <img src="./imágenes/ima4.JPG" alt="Elefante" class="elephant-img" />
+      <img src="./imágenes/ima7.JPG" alt="Cubo" class="cube-img" />
+      <img src="./imágenes/ima8.JPG" alt="Estanteria" class="stand-img" />
+      <img src="./imágenes/ima9.JPG" alt="Plantas" class="plants-img" />
+    </section>
+
+    <section id="carta">
+       
+        <div class="carta">
+  <h1>Carta</h1>
+         
+          <div class="menu__item menu__item--item1">
+            <ul>Desayunos</ul>
+          <ul>Carta</ul>
+         <ul>Cocktails</ul>
+        </div>
+        <button type="submit">Ver la carta de desayunos</button>
+      </section>
+
+<section id="reservas">
+    <h1>Reservas</h1>
+    <form
+    autocomplete="off"
+    method="post"
+    action="https://reqres.in/api/users"
+    class="formulario"
+    >
+    <label for="fpeople">Personas</label>
+      <select id="speople" name="people" required>
+        <option disabled selected value>Seleccione un número de personas</option>
+        <option class="formulario__option" value="onep">1 persona</option>
+        <option class="formulario__option" value="twop">2 personas</option>
+        <option class="formulario__option" value="thrp">3 personas</option>
+        <option class="formulario__option" value="foup">4 personas</option>
+        <option class="formulario__option" value="fivp">5 personas</option>
+        <option class="formulario__option" value="sixp">6 personas</option>
+        <option class="formulario__option" value="sevp">7 personas</option>
+        <option class="formulario__option" value="eigp">8 personas</option>
+        <option class="formulario__option" value="ninp">9 personas</option>
+        <option class="formulario__option" value="tenp">10 personas</option>
+      </select>
+
+    
+    <label for="fhour">Hora</label>
+    <select id="fhour" name="hour" required>
+        <option disabled selected value>Seleccione una hora</option>
+        <option class="formulario__option" value="lau1">13:00</option>
+        <option class="formulario__option" value="lau2">14:00</option>
+        <option class="formulario__option" value="lau3">15:00</option>
+        <option class="formulario__option" value="lau4">16:00</option>
+        <option class="formulario__option" value="din1">19:00</option>
+        <option class="formulario__option" value="din2">20:00</option>
+        <option class="formulario__option" value="din3">21:00</option>
+        <option class="formulario__option" value="din4">22:00</option>
+        <option class="formulario__option" value="din5">23:00</option>
+    </select>
+<br>
+        <label for="ftable">Tipo de mesa</label>
+        <select id="ftable" name="table">
+<option disabled selected value>Seleccione el tipo de mesa</option>
+            <option class="formulario__option" value="room">Sala</option>
+            <option class="formulario__option" value="cover">Terraza cubierta</option>
+            <option class="formulario__option" value="nocover">Terraza no cubierta</option>
+        </select>
+        <br>
+        <button type="submit">Reservar</button>
+    <p>Si no encuentra disponiblidad, apúntese en la lista de espera.</p>
+    <button type="submit">Lista de espera</button>
+    <br>
+    <button type="submit">Solicitud de grupo</button>
+           <h1>Mozzabar</h1>
+           <h2>Food & Drinks</h2>
+           <p>Conde de Peñalver 64</p>
+           <p>28006 - Madrid</p>
+           <p>Abrimos de lunes a domingo</p>
+           <p>de 07:30 a 01:30</p>
+
+           <section id="blog">
+             <h1>Blog</h1>
+             ----
+             <button type="submit">Ver todas las entradas</button>
+           </section>
+
+           <sectin id="contacto"><h1>Ven cuando quieras</h1></sectin>
+           <p>C/ Conde de Peñalver 64 28006 - Madrid</p>
+           <p>910 258 327</p>
+           <p>hola@mozzabar.es</p>
+           </section>
+
+
+             
+           <section><h1>Síguenos</h1>
+            <button type="submit">Facebook</button><button type="submit">Instagram</button>
+          </section>
+          <footer>
+            <div>
+            <section id="section2" class="section-container">
+              <table>
+                <thead>
+                  <th>Enlaces de interés</th>
+                  <th>Horarios</th>
+                  <th>Contacto</th>
+                </thead>
+        
+                <tbody>
+                  <tr>
+                    <td>Aviso legal</td>
+                    <td>Lunes a Domingo</td>
+                    <td>C/ Conde de Peñalver 64 28006 - Madrid</td>
+                  </tr>
+                  <tr>
+                    <td>Cookies</td>
+                    <td>07:30 a 01:30</td>
+                    <td>910 258 327 hola@mozzabar.es</td>
+                  </tr>
+        
+                </tbody>
+              </table>
+            </section>
+          </div>
+              <p>©2022. Todos los derechos reservados</p>
+              <button type="submit">Facebook</button><button type="submit">Instagram</button>
+            </div>
+          </footer>
+  </body>
+</html>
+ 
